@@ -1,0 +1,111 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "Ans",
+        "samples": [
+          "{Num}",
+          "it is {Num}",
+          "that is {Num}",
+          "it's {Num}",
+          "that's {Num}",
+          "is that {Num}"
+        ],
+        "slots": [
+          {
+            "name": "Num",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "BeginGame",
+        "samples": [
+          "start game",
+          "begin a quiz",
+          "begin quiz",
+          "Let us play",
+          "Let's play",
+          "Ask me tables"
+        ],
+        "slots": []
+      },
+      {
+        "name": "BeginGameRange",
+        "samples": [
+          "start game for tables from {NumStart} to {NumEnd}",
+          "begin a quiz for tables from {NumStart} to {NumEnd}",
+          "begin quiz for tables from {NumStart} to {NumEnd}",
+          "Let us play for tables from {NumStart} to {NumEnd}",
+          "Let's play for tables from {NumStart} to {NumEnd}",
+          "start game from {NumStart} to {NumEnd}",
+          "begin a quiz from {NumStart} to {NumEnd}",
+          "begin quiz from {NumStart} to {NumEnd}",
+          "Let us play from {NumStart} to {NumEnd}",
+          "Let's play from {NumStart} to {NumEnd}"
+        ],
+        "slots": [
+          {
+            "name": "NumStart",
+            "type": "AMAZON.NUMBER"
+          },
+          {
+            "name": "NumEnd",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "BeginGameTable",
+        "samples": [
+          "ask me table of {Num}",
+          "Let's play for table of {Num}",
+          "Let's play for {Num}",
+          "start game for table of {Num}",
+          "begin a quiz for table of {Num}",
+          "begin quiz for table for {Num}",
+          "Let us play for table for {Num}",
+          "Let's play for table for {Num}",
+          "start game for {Num}",
+          "begin a quiz for {Num}",
+          "begin quiz for {Num}",
+          "Let us play for {Num}"
+        ],
+        "slots": [
+          {
+            "name": "Num",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "TellTable",
+        "samples": [
+          "Tell me table of {Num}",
+          "play table of {Num}",
+          "help me with table of {Num}",
+          "tell table of {Num}"
+        ],
+        "slots": [
+          {
+            "name": "Num",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      }
+    ],
+    "invocationName": "math championship"
+  }
+}
